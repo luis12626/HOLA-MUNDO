@@ -1,0 +1,47 @@
+Algoritmo Agenda
+	// Definición de variables
+	Dimension nombres[50]
+	Dimension telefonos[50]
+	Definir opcion, numContactos como Entero
+	
+	numContactos <- 0 // Inicializamos el contador de contactos
+	
+	Repetir
+		Escribir "1. Agregar contacto"
+		Escribir "2. Mostrar contactos"
+		Escribir "3. Salir"
+		Leer opcion
+		
+
+
+
+			Segun opcion Hacer
+				Caso 1:
+					Si numContactos < 50 Entonces
+						numContactos <- numContactos + 1
+						
+						Escribir "Ingrese el nombre del contacto:"
+						Leer nombres[numContactos]
+						
+						Escribir "Ingrese el número de teléfono:"
+						Leer telefonos[numContactos]
+						
+						Escribir "Contacto agregado exitosamente."
+					Sino
+						Escribir "La agenda está llena. No se pueden agregar más contactos."
+					Fin Si
+				Caso 2:
+					Si i<> 0 Entonces
+						Escribir "Lista de contactos:"
+						Para i <- 1 Hasta numContactos
+							Escribir "contacto N°", i
+							Escribir "Nombre:", nombres[i]
+							Escribir " Teléfono:", telefonos[i]
+						Fin Para
+					FinSi 
+					Escribir  "La lista de contactos esta vacía. Ingrese un contacto"
+				De Otro Modo:
+					Escribir "opcion no valida"
+			Fin Segun
+	Hasta Que opcion >= 3 o opcion <=0
+FinAlgoritmo
