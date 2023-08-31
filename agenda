@@ -1,7 +1,9 @@
 Algoritmo Agenda
 	// Definición de variables
 	Dimension nombres[50]
-	Dimension telefonos[50]
+	Dimension Contraseña[50]
+	Dimension usuario[50] 
+	Dimension administrador[50] 
 	Definir opcion, numContactos como Entero
 	
 	numContactos <- 0 // Inicializamos el contador de contactos
@@ -23,8 +25,8 @@ Algoritmo Agenda
 						Escribir "Ingrese el nombre del contacto:"
 						Leer nombres[numContactos]
 						
-						Escribir "Ingrese el número de teléfono:"
-						Leer telefonos[numContactos]
+						Escribir "Ingrese el número de Contraseña:"
+						Leer Contraseña[numContactos]
 						
 						Escribir "Contacto agregado exitosamente."
 					Sino
